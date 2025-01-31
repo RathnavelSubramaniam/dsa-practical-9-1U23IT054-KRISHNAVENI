@@ -58,7 +58,7 @@ public void deleteBegin()
        {
         tail = null;
        } 
-       System.out.println("Deleted Element is: " + temp.data);
+       System.out.println("Deleted Element is:" + temp.data);
      }
 }
 public void displayList() {
