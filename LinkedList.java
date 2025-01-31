@@ -48,15 +48,18 @@ public void deleteBegin()
 {
     if (head == null)
     {
-        System.out.println("List is empty.Deletion not possible.");
+        System.out.println("List is Empty");
     }
-    else{
-        head = head.next;
-        if (head == null)
-        {
-            tail = null;
-        }
-    }
+    else
+    {
+       Node temp = head;
+       head = head.next;
+       if (head == null)
+       {
+        tail = null;
+       } 
+       System.out.println("Deleted Element: " + temp.data);
+     }
 }
 public void displayList() {
         Node current = head;
